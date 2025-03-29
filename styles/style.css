@@ -81,20 +81,20 @@ section h2 i {
 }
 
 .product-container {
-    display: flex; /* Use Flexbox to align items in a row */
-    flex-wrap: wrap; /* Allow wrapping to the next row if needed */
-    gap: 20px; /* Add space between products */
-    justify-content: center; /* Center the products horizontally */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
     margin: 20px 0;
 }
 
 .product {
-    background-color: #1A2238; /* Background color for the product card */
+    background-color: #1A2238; 
     color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 250px; /* Set a fixed width for each product */
+    width: 250px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -105,7 +105,7 @@ section h2 i {
 }
 
 .product img {
-    width: 100%; /* Make the image fit the product card */
+    width: 100%; 
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -118,11 +118,11 @@ section h2 i {
 
 .product p {
     font-size: 1em;
-    color: #E8C27A; /* Light gold for price text */
+    color: #E8C27A;
 }
 
 .product button {
-    background: linear-gradient(45deg, #A4720E, #E8C27A); /* Gold gradient */
+    background: linear-gradient(45deg, #A4720E, #E8C27A); 
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -132,7 +132,7 @@ section h2 i {
 }
 
 .product button:hover {
-    box-shadow: 0 0 15px #A4720E80; /* Glow effect */
+    box-shadow: 0 0 15px #A4720E80; 
 }
 
 footer {
@@ -297,3 +297,21 @@ a:hover {
     font-size: 1.5em;
     margin-top: 20px;
 }
+/* ...existing code... */
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .product {
+        width: 90%; /* Make the product smaller */
+        height: 30%;
+        margin: 0 auto; /* Center the product horizontally */
+        display: block; /* Ensure proper alignment */
+    }
+
+    .product img {
+        width: 100%; /* Ensure images scale properly */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* ...existing code... */
