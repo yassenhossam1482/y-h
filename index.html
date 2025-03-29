@@ -22,7 +22,17 @@
             gap: 20px; /* Space between products */
             justify-content: center; /* Center the grid */
             align-items: start; /* Align items at the top */
+            padding: 20px; /* Add padding around the grid */
+            margin: 0 auto; /* Center the grid in the container */
+            max-width: 1200px; /* Maximum width for the grid */
         }
+
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 products per row on phones */
+            }
+        }
+
         .product {
             border: 1px solid #ddd; /* Add a border around each product */
             border-radius: 8px; /* Rounded corners */
@@ -31,15 +41,32 @@
             background-color: #fff; /* White background for products */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
+
         .product img {
             max-width: 100%; /* Ensure images fit within the product box */
             height: auto; /* Maintain aspect ratio */
             border-radius: 8px; /* Match the border radius of the product box */
         }
+
         .product h3 {
             font-size: 1.2em; /* Slightly larger font for product titles */
             margin: 10px 0; /* Add spacing around the title */
-     
+        }
+
+        .product button {
+            background-color: #ffcc00; /* Noon-like yellow button */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .product button:hover {
+            background-color: #e6b800; /* Darker yellow on hover */
+        }
     </style>
 </head>
 <body>
@@ -106,12 +133,6 @@
                         <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
                     </div>
 
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
                     <div class="product">
                         <img src="./11.jpg" alt="Women's Product 2">
                         <h3>Women's Perfume 2</h3>
