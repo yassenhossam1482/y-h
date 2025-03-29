@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المنتجات</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <center>
+        <a href="./index.html" id="home-link" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+    <header>
+        <h1>إدارة المنتجات</h1>
+    </header>
+    <main>
+        <form id="add-product-form">
+            <label for="product-name">اسم المنتج:</label><br>
+            <input type="text" id="product-name" required><br>
+            <label for="product-price">السعر:</label><br>
+            <input type="number" id="product-price" required><br>
+            <label for="product-category">القسم:</label><br>
+            <select id="product-category" required><br>
+                <option value="men">رجال</option><br>
+                <option value="women">نساء</option><br>
+            </select>
+            <label for="product-image">صورة المنتج:</label>
+            <input type="file" id="product-image" accept="image/*" required><br>
+            <label for="shipping-cost">Shipping Cost:</label><br>
+            <input type="number" id="shipping-cost" required><br>
+            <button type="button" onclick="addProduct()">إضافة المنتج</button><br>
+        </form>
+        <a href="./index.html" id="home-link" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+  
+        <section id="coupon-section">
+            <h2>إدارة الكوبونات</h2>
+            <form id="add-coupon-form">
+                <label for="coupon-code">رمز الكوبون:</label><br>
+                <input type="text" id="coupon-code" required><br>
+                <label for="coupon-discount">نسبة الخصم (%):</label><br>
+                <input type="number" id="coupon-discount" required><br>
+                <button type="button" onclick="addCoupon()">إضافة الكوبون</button><br>
+            </form>
+            <h3>الكوبونات الحالية</h3>
+            <ul id="coupon-list"></ul>
+        </section>
+
+        <section id="product-list">
+            <h2>المنتجات الحالية</h2>
+            <ul id="products"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>تم تصميم هذا الموقع بواسطة المبرمج ياسين حسام</p>
+        <h2>للتواصل مع المطور</h2>
+           
+                      
+        <h3><a href="https://www.tiktok.com/@hrf_2k?_t=ZS-8v4h9hY1MkJ&_r=1">للتواصل عبر التيك توك</a>
+             <br>
+            <a href="https://wa.me/201022518190">للتواصل عبر الواتساب</a>
+            <br>
+
+    </footer>
+    <script src="scripts/app.js"></script>
+   
+    </center>
+</body>
+</html>
