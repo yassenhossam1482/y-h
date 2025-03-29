@@ -29,8 +29,20 @@
 
         @media (max-width: 768px) {
             .product-container {
-                grid-template-columns: repeat(3, 1fr); /* 3 products per row on phones */
+                display: flex; /* Change grid to flex for horizontal scrolling */
+                overflow-x: auto; /* Enable horizontal scrolling */
+                scroll-snap-type: x mandatory; /* Snap to products */
             }
+
+            .product {
+                flex: 0 0 calc(33.33% - 10px); /* 3 products per view with spacing */
+                margin-right: 30px; /* Add spacing between products */
+                scroll-snap-align: start; /* Snap alignment */
+            }
+        }
+
+        .product-container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for better UX */
         }
 
         .product {
@@ -43,7 +55,7 @@
         }
 
         .product img {
-            max-width: 100%; /* Ensure images fit within the product box */
+            max-width: 50%; /* Ensure images fit within the product box */
             height: auto; /* Maintain aspect ratio */
             border-radius: 8px; /* Match the border radius of the product box */
         }
@@ -97,107 +109,124 @@
                         <button onclick="redirectToOrder('Men\'s Perfume 1', 100)">Buy Now</button>
                     </div>
                     <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="./11.jpg" alt="Women's Product 2">
+                        <h3>Women's Perfume 2</h3>
+                        <p>Price: 250 جنيه</p>
+                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
+                    </div>
+                    <div class="product">
                         <img src="./11.jpg" alt="Men's Product 2">
                         <h3>Men's Perfume 2</h3>
                         <p>Price: 200 جنيه</p>
                         <button onclick="redirectToOrder('Men\'s Perfume 2', 200)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Men's Product 3">
-                        <h3>Men's Perfume 3</h3>
-                        <p>Price: 300 جنيه</p>
-                        <button onclick="redirectToOrder('Men\'s Perfume 3', 300)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
                     </div>
                 </div>
             </section>
@@ -209,96 +238,6 @@
                         <h3>Women's Perfume 1</h3>
                         <p>Price: 150 جنيه</p>
                         <button onclick="redirectToOrder('Women\'s Perfume 1', 150)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="./11.jpg" alt="Women's Product 2">
-                        <h3>Women's Perfume 2</h3>
-                        <p>Price: 250 جنيه</p>
-                        <button onclick="redirectToOrder('Women\'s Perfume 2', 250)">Buy Now</button>
                     </div>
                     <div class="product">
                         <img src="./11.jpg" alt="Women's Product 2">
